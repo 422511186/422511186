@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week-02</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./js/getDB.js"></script>
+</head>
+
+<body>
+<!-- 头部栏 -->
+<header class="header">
+    <div class="header-img"></div>
+</header>
+<main class="main">
+
+    <!-- 歌单推荐 -->
+    <div class="section">
+        <div class="section_inner">
+            <h1>歌单推荐</h1>
+            <!-- Tab -->
+            <div class="mod-tab">
+                <a href="javascript:void(0)" class="checked">为你推荐</a>
+                <a href="javascript:void(0)">运动</a>
+                <a href="javascript:void(0)">网络歌曲</a>
+                <a href="javascript:void(0)">思念</a>
+                <a href="javascript:void(0)">官方歌单</a>
+                <a href="javascript:void(0)">情歌</a>
+            </div>
+            <!--主体-->
+            <div>
+                <ul class="mod_playlist">
+                    <li class="item">
+                        <div class="img-box">
+                            <img class="image"
+                                 src="http://qpic.y.qq.com/music_cover/8HhavvWNIicpyjlv0UnT5TWLRxhfmGTVwYtiaWd54wZItUPRu7486Fqw/300?n=1"
+                                 alt="">
+                            <div class="play_logo"></div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="playlist__title_txt"><span>翻唱女神J.Fla | 只唱你最爱的旋律</span></div>
+                        <div class="playlist_other"><span>播放量: </span>891.4万</div>
+                    </li>
+                    <li class="item">
+                        <div class="img-box">
+                            <img class="image"
+                                 src="http://qpic.y.qq.com/music_cover/GUalk7A0sBGvkxmUrXIf7KnEVGJFicuoT7xSkZLHiaEMB5Ojbccf6cbA/300?n=1"
+                                 alt="">
+                            <div class="play_logo"></div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="playlist__title_txt"><span>古风女声控，优美旋律为你而来</span></div>
+                        <div class="playlist_other"><span>播放量: </span>171.2万</div>
+                    </li>
+                    <li class="item">
+                        <div class="img-box">
+                            <img class="image"
+                                 src="http://qpic.y.qq.com/music_cover/QrmdXDG3R4jGSEzqu0qtR4vw6Glga0N83eKicVCib61BZw5lZtWEUMibQ/300?n=1"
+                                 alt="">
+                            <div class="play_logo"></div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="playlist__title_txt"><span>想开一家早餐店，叫“早点见面”</span></div>
+                        <div class="playlist_other"><span>播放量: </span>52.5万</div>
+                    </li>
+                    <li class="item">
+                        <div class="img-box">
+                            <img class="image"
+                                 src="http://qpic.y.qq.com/music_cover/R8unPZMA4Vp5v2Ms96bst9nFCfe4YPBFBADicMz2LB0kLfEiaUM4ymiag/300?n=1"
+                                 alt="">
+                            <div class="play_logo"></div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="playlist__title_txt"><span>好评999+英文歌！轻松解压100％</span></div>
+                        <div class="playlist_other"><span>播放量: </span>12391.0万</div>
+                    </li>
+                    <li class="item">
+                        <div class="img-box">
+                            <img class="image"
+                                 src="http://qpic.y.qq.com/music_cover/IknB7UUG0ME0zalRpPKYjJiauia2kJzKs5gtKQY4Vq9TJYLXdjQK9fCA/300?n=1"
+                                 alt="">
+                            <div class="play_logo"></div>
+                            <div class="mask"></div>
+                        </div>
+                        <div class="playlist__title_txt"><span>书房背景乐 沉浸于字里行间的时光</span></div>
+                        <div class="playlist_other"><span>播放量: </span>303.3万</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--新歌首发-->
+    <div class="new-songs-box">
+        <div class="section_inner">
+            <h1>新歌首发</h1>
+            <!-- Tab -->
+            <div class="mod-tab">
+                <a class="playAll" href="javascript:void(0)">
+                    <i class="icon-1"></i>
+                    <span>播放全部</span>
+                </a>
+                <a href="javascript:void(0)" class="checked">最新</a>
+                <a href="javascript:void(0)">内地</a>
+                <a href="javascript:void(0)">港台</a>
+                <a href="javascript:void(0)">欧美</a>
+                <a href="javascript:void(0)">韩国</a>
+                <a href="javascript:void(0)">日本</a>
+            </div>
+            <!--主体-->
+            <div>
+                <ul class="mod_slide">
+
+                    <li class="item">
+                        <div class="img-box inline-block">
+                            <img class="mod_slide_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T002R90x90M000002myPA84G7kxG_1.jpg"
+                                 alt="">
+                            <div class="play_logo1"></div>
+                            <div class="mask1"></div>
+                        </div>
+                        <div class="detail">
+                            <span class="song-name">Sabotage</span>
+                            <span class="singer-name">Bebe Rexha</span>
+                        </div>
+                        <div class="inline-block time">
+                            <span class="time-length">02.56</span>
+                        </div>
+                    </li>
+                    <li class="item">
+
+                        <div class="img-box inline-block">
+                            <img class="mod_slide_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T002R90x90M000003UIhdS4fBLqU_1.jpg"
+                                 alt="">
+                            <div class="play_logo1"></div>
+                            <div class="mask1"></div>
+                        </div>
+                        <div class="detail">
+                            <span class="song-name">如果人人爱音乐</span>
+                            <span class="singer-name">张蔷</span>
+                        </div>
+                        <div class="inline-block time">
+                            <span class="time-length">03.46</span>
+                        </div>
+                    </li>
+                    <li class="item">
+
+                        <div class="img-box inline-block">
+                            <img class="mod_slide_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T002R90x90M000002v6ztM40D0iP_1.jpg"
+                                 alt="">
+                            <div class="play_logo1"></div>
+                            <div class="mask1"></div>
+                        </div>
+                        <div class="detail">
+                            <span class="song-name">你就不要想起我</span>
+                            <span class="singer-name">R1SE赵磊</span>
+                        </div>
+                        <div class="inline-block time">
+                            <span class="time-length">04.30</span>
+                        </div>
+                    </li>
+
+                    <li class="item">
+
+                        <div class="img-box inline-block">
+                            <img class="mod_slide_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T002R90x90M0000005wEOc07Udwu_1.jpg"
+                                 alt="">
+                            <div class="play_logo1"></div>
+                            <div class="mask1"></div>
+                        </div>
+                        <div class="detail">
+                            <span class="song-name">软肋</span>
+                            <span class="singer-name">李宇春</span>
+                        </div>
+                        <div class="inline-block time">
+                            <span class="time-length">04.17</span>
+                        </div>
+                    </li>
+                    <li class="item">
+
+                        <div class="img-box inline-block">
+                            <img class="mod_slide_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T002R90x90M000003vGVIq243Mzm_2.jpg"
+                                 alt="">
+                            <div class="play_logo1"></div>
+                            <div class="mask1"></div>
+                        </div>
+                        <div class="detail">
+                            <span class="song-name">一爱如故《长歌行》电视剧插...</span>
+                            <span class="singer-name">摩登兄弟刘宇宁</span>
+                        </div>
+                        <div class="inline-block time">
+                            <span class="time-length">03.55</span>
+                        </div>
+                    </li>
+                    <li class="item">
+
+                        <div class="img-box inline-block">
+                            <img class="mod_slide_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T002R90x90M000000hNAwr4dbutH_1.jpg"
+                                 alt="">
+                            <div class="play_logo1"></div>
+                            <div class="mask1"></div>
+                        </div>
+                        <div class="detail">
+                            <span class="song-name">向宿命挥拳的人《新斗罗大陆...</span>
+                            <span class="singer-name">阿云嘎</span>
+                        </div>
+                        <div class="inline-block time">
+                            <span class="time-length">04.00</span>
+                        </div>
+                    </li>
+
+                    <li class="item">
+
+                        <div class="img-box inline-block">
+                            <img class="mod_slide_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T002R90x90M000000dcpok0A8RP3_2.jpg"
+                            alt="">
+                            <div class="play_logo1"></div>
+                            <div class="mask1"></div>
+                        </div>
+                        <div class="detail">
+                            <span class="song-name">花好月圆</span>
+                            <span class="singer-name">周迅</span>
+                        </div>
+                        <div class="inline-block time">
+                            <span class="time-length">02.34</span>
+                        </div>
+                    </li>
+
+                    <li class="item">
+
+                        <div class="img-box inline-block">
+                            <img class="mod_slide_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T002R90x90M000004X1Kbg34UHQ5_1.jpg"
+                                 alt="">
+                            <div class="play_logo1"></div>
+                            <div class="mask1"></div>
+                        </div>
+                        <div class="detail">
+                            <span class="song-name">Renegades《浪客剑心 最终...</span>
+                            <span class="singer-name">ONE OK ROCK</span>
+                        </div>
+                        <div class="inline-block time">
+                            <span class="time-length">04.04</span>
+                        </div>
+                    </li>
+
+                    <li class="item">
+
+                        <div class="img-box inline-block">
+                            <img class="mod_slide_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T002R90x90M0000018mpfj0lSvS0_1.jpg"
+                                 alt="">
+                            <div class="play_logo1"></div>
+                            <div class="mask1"></div>
+                        </div>
+                        <div class="detail">
+                            <span class="song-name">驯化者</span>
+                            <span class="singer-name">陈俊豪/陈誉庚/TGM-姜...</span>
+                        </div>
+                        <div class="inline-block time">
+                            <span class="time-length">03.28</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--MV-->
+    <div class="mv-box">
+        <div class="section_inner">
+            <h1>MV</h1>
+            <!-- Tab -->
+            <div class="mod-tab">
+                <a href="javascript:void(0)" class="checked">精选</a>
+                <a href="javascript:void(0)">内地</a>
+                <a href="javascript:void(0)">韩国</a>
+                <a href="javascript:void(0)">港台</a>
+                <a href="javascript:void(0)">欧美</a>
+                <a href="javascript:void(0)">日本</a>
+            </div>
+            <!--主体-->
+            <div>
+                <ul class="mod_slide_mv">
+                    <li>
+                        <div class="img-box inline-block">
+                            <img class="mv_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T015R640x360M102000SY7kU0vIuoT.jpg"
+                                 alt="">
+                            <div class="play_logo2"></div>
+                            <div class="mask2"></div>
+                        </div>
+                        <div class="detail">
+                            <div class="mv_detail">向宿命挥拳的人 (《新斗罗大陆》手游戴沐白角色曲)</div>
+                            <p>阿云嘎</p>
+                            <p><i class="icon-2"></i>9370</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-box inline-block">
+                            <img class="mv_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T015R640x360M000003vHDbe24Jqpl.jpg"
+                                 alt="">
+                            <div class="play_logo2"></div>
+                            <div class="mask2"></div>
+                        </div>
+                        <div class="detail">
+                            <div class="mv_detail">雨</div>
+                            <p>Sunnee杨芸晴</p>
+                            <p><i class="icon-2"></i>3585</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-box inline-block">
+                            <img class="mv_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T015R640x360M1010047OlaH3P3f0J.jpg"
+                                 alt="">
+                            <div class="play_logo2"></div>
+                            <div class="mask2"></div>
+                        </div>
+                        <div class="detail">
+                            <div class="mv_detail">一爱如故 (《长歌行》电视剧插曲)</div>
+                            <p>摩登兄弟刘宇宁</p>
+                            <p><i class="icon-2"></i>43495</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-box inline-block">
+                            <img class="mv_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T015R640x360M101002cYg662xvSlL.jpg"
+                                 alt="">
+                            <div class="play_logo2"></div>
+                            <div class="mask2"></div>
+                        </div>
+                        <div class="detail">
+                            <div class="mv_detail">我很好骗</div>
+                            <p>动力火车</p>
+                            <p><i class="icon-2"></i>11301</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-box inline-block">
+                            <img class="mv_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T015R640x360M101001YVtJL2sr2Z7.jpg"
+                                 alt="">
+                            <div class="play_logo2"></div>
+                            <div class="mask2"></div>
+                        </div>
+                        <div class="detail">
+                            <div class="mv_detail">造梦时学会飞行 (《声梦传奇》主题曲</div>
+                            <p>TVB</p>
+                            <p><i class="icon-2"></i>1539</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-box inline-block">
+                            <img class="mv_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T015R640x360M101003RlAau1dFne3.jpg"
+                                 alt="">
+                            <div class="play_logo2"></div>
+                            <div class="mask2"></div>
+                        </div>
+                        <div class="detail">
+                            <div class="mv_detail">What's Wrong With Me (Punk Version)</div>
+                            <p>Lil Ghost小鬼</p>
+                            <p><i class="icon-2"></i>206872</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-box inline-block">
+                            <img class="mv_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T015R640x360M102003c3tSe1ehWwN.jpg"
+                                 alt="">
+                            <div class="play_logo2"></div>
+                            <div class="mask2"></div>
+                        </div>
+                        <div class="detail">
+                            <div class="mv_detail">Let's Party (《和平精英》2周年庆派对邀请曲)</div>
+                            <p>吴宣仪</p>
+                            <p><i class="icon-2"></i>67024</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-box inline-block">
+                            <img class="mv_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T015R640x360M0000013X2t31kvJC4.jpg"
+                                 alt="">
+                            <div class="play_logo2"></div>
+                            <div class="mask2"></div>
+                        </div>
+                        <div class="detail">
+                            <div class="mv_detail">鋼の羽根</div>
+                            <p>RADWIMPS</p>
+                            <p><i class="icon-2"></i>2927</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-box inline-block">
+                            <img class="mv_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T015R640x360M101003aYDEH2kWTX7.jpg"
+                                 alt="">
+                            <div class="play_logo2"></div>
+                            <div class="mask2"></div>
+                        </div>
+                        <div class="detail">
+                            <div class="mv_detail">에필로그 (epilogue)</div>
+                            <p>IU</p>
+                            <p><i class="icon-2"></i>8197</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-box inline-block">
+                            <img class="mv_img"
+                                 src="https://y.gtimg.cn/music/photo_new/T015R640x360M101000xHMCS1g3sSW.jpg"
+                                 alt="">
+                            <div class="play_logo2"></div>
+                            <div class="mask2"></div>
+                        </div>
+                        <div class="detail">
+                            <div class="mv_detail">圭贤《Coffee》MV</div>
+                            <p>圭贤</p>
+                            <p><i class="icon-2"></i>15163</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="bottom-box"></div>
+</body>
+
+</html>
