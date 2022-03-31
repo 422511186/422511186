@@ -17,23 +17,23 @@ body {
 }
 
 .header-img {
+    max-width: 1300px;
+    margin: 0 auto;
     height: 90px;
     background-image: url(../images/qqmusic.png);
     background-repeat: no-repeat;
     background-size: 170px 46px;
-    background-position: 64px 21px;
+    background-position: 10px 21px;
 }
 
 .main {
     background-color: rgb(243, 243, 243);
 }
 
-.new-songs-box {
-    background-image: linear-gradient(to bottom, rgb(242, 242, 242), rgb(250, 250, 250));
-}
-
-.section {
-    background-image: linear-gradient(to bottom, rgb(242, 242, 242), rgb(250, 250, 250));
+.new-songs-box,.section ,.mv-box {
+    /* background-image: linear-gradient(to bottom, rgb(242, 242, 242), rgb(250, 250, 250)); */
+    background: url("../images/bg_detail.bb32b2d1.webp") 50% 0 repeat-x;
+    background-size: cover;
 }
 
 .section_inner {
@@ -51,7 +51,6 @@ body {
 .mod-tab {
     display: flex;
     justify-content: center;
-    /*height: 60px;*/
     margin-bottom: 40px;
 }
 
@@ -79,8 +78,6 @@ li {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    /*max-width: 1200px;*/
-    /*min-width: 900px;*/
     width: 100%;
 }
 
@@ -91,7 +88,6 @@ li {
 }
 
 .img-box {
-    /*width: 100%;*/
     position: relative;
     overflow: hidden;
 }
@@ -216,11 +212,13 @@ li {
 
 
 .mod_slide .detail {
-    display: inline-block;
+    padding-right: 35px;
+    flex: 1;
     vertical-align: top;
     font-size: 14px;
     margin-top: 20px;
     margin-left: 15px;
+
 }
 
 .mod_slide .detail span {
@@ -230,10 +228,15 @@ li {
 
 .inline-block {
     display: inline-block;
+    
 }
 
 .singer-name {
     color: #999;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 .time {
@@ -286,7 +289,6 @@ li {
 }
 
 .mv-box {
-    background-image: linear-gradient(to bottom, rgb(242, 242, 242), rgb(250, 250, 250));
     padding-bottom: 30px;
 }
 
@@ -299,7 +301,6 @@ li {
 }
 
 .mod_slide_mv li {
-    /*background-color: cornflowerblue;*/
     overflow: hidden;
 }
 
@@ -322,6 +323,7 @@ li {
 
 .mod_slide_mv .detail p {
     color: #999999;
+    margin-top: 3px;
 }
 
 .bottom-box {
@@ -337,7 +339,6 @@ li {
     background-size: cover;
     margin-right: 0.5em;
 }
-
 
 .mask2 {
     position: absolute;
@@ -375,4 +376,14 @@ li {
 
 .img-box:hover .mv_img {
     transform: scale(1.1);
+}
+
+.mod_slide .item{
+    display: flex;
+}
+.song-name {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
