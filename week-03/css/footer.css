@@ -1,0 +1,33 @@
+.footdiv {
+    margin-left: 100px;
+}
+
+.footdiv .logo {
+    width: 105px;
+}
+
+.footdiv .text {
+    font-size: 14px;
+    margin: 20px 0;
+    max-width: 275px;
+}
+
+@media screen and (max-width: 1366px) {
+    .footdiv {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .footdiv {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+}

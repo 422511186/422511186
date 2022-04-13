@@ -1,0 +1,126 @@
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left .nav li {
+    padding-right: 16px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.logo {
+    display: block;
+    width: 76px;
+    height: 30px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.logo {
+    background-image: url("../imgs/logo-black.svg");
+    margin-right: 16px;
+}
+
+.logo:hover {
+    background-image: url("../imgs/logo-red.svg");
+}
+
+.left .nav li:hover {
+    color: rgb(234, 76, 137);
+}
+
+.checked {
+    background-color: rgb(234, 76, 137);
+    color: #fff;
+}
+
+
+.right .nav .btn {
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.on, .off {
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    display: none;
+    margin-left: 25px;
+}
+
+.on {
+    background-image: url("../imgs/icon-menu.svg");
+}
+
+.off {
+    background-image: url("../imgs/icon-close.svg");
+}
+
+@media screen and (max-width: 1366px) {
+
+}
+
+@media screen and (max-width: 920px) {
+    .header {
+        height: 60px;
+        margin: 0;
+    }
+
+    .on {
+        display: inline-block;
+    }
+
+    .header .left .nav {
+        display: none;
+    }
+
+    .header .right .checked {
+        display: none;
+    }
+
+    .header .right .btn {
+        margin-right: 20px;
+    }
+
+    .header .left .logo {
+        position: absolute;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*列表*/
+    .left .nav {
+        display: block;
+        width: 100%;
+        height: calc(100vh - 60px);
+        flex-direction: column;
+        position: absolute;
+        font-size: 18px;
+        top: 60px;
+    }
+
+    .left .nav {
+        background-color: #fff;
+        font-weight: bold;
+        color: #6e6d7a;
+    }
+
+    .left .nav li {
+        box-sizing: border-box;
+        padding: 0 0 0 20px;
+        width: 100%;
+        display: block;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 375px) {
+
+}
