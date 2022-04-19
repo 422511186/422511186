@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header,
+.tabs,
+.list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+header {
+    padding: 20px 30px;
+}
+
+main {
+    background-color: rgb(246, 246, 246);
+    padding-bottom: 40px;
+}
+
+.tabs {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding-top: 12px;
+}
+
+.tabs li {
+    margin-right: 20px;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+
+.tabs .checked {
+    color: white;
+    background-color: rgb(55, 194, 126);
+}
+
+.list {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-box {
+    position: relative;
+}
+
+.item .image {
+    width: 100%;
+    transform: scale(1);
+    transition: all .5s;
+}
+
+.item .name, .item .singer, .item .release_time {
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.item .name {
+    margin-top: 10px;
+
+}
+
+.item .singer {
+
+
+}
+
+
+.release_time {
+    color: #999;
+}
+
+.delete {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    background-image: url(../imgs/delete.png);
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.img-box:hover .delete {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+@media screen and (max-width: 644px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+}
